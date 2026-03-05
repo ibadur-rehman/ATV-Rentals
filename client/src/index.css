@@ -1,0 +1,356 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* ATV Rentals Premium Red/Black Theme */
+  --background: hsl(0, 0%, 100%);
+  --foreground: hsl(0, 0%, 0%);
+  --card: hsl(0, 0%, 100%);
+  --card-foreground: hsl(0, 0%, 0%);
+  --popover: hsl(0, 0%, 100%);
+  --popover-foreground: hsl(0, 0%, 0%);
+  --primary: hsl(348, 83%, 47%);
+  --primary-foreground: hsl(0, 0%, 100%);
+  --secondary: hsl(0, 0%, 11%);
+  --secondary-foreground: hsl(0, 0%, 100%);
+  --muted: hsl(0, 0%, 96%);
+  --muted-foreground: hsl(0, 0%, 40%);
+  --accent: hsl(0, 100%, 50%);
+  --accent-foreground: hsl(0, 0%, 100%);
+  --destructive: hsl(0, 84%, 60%);
+  --destructive-foreground: hsl(0, 0%, 100%);
+  --border: hsl(0, 0%, 90%);
+  --input: hsl(0, 0%, 90%);
+  --ring: hsl(348, 83%, 47%);
+  --chart-1: hsl(348, 83%, 47%);
+  --chart-2: hsl(0, 100%, 50%);
+  --chart-3: hsl(0, 0%, 27%);
+  --chart-4: hsl(0, 0%, 11%);
+  --chart-5: hsl(348, 83%, 37%);
+  --sidebar: hsl(0, 0%, 0%);
+  --sidebar-foreground: hsl(0, 0%, 100%);
+  --sidebar-primary: hsl(348, 83%, 47%);
+  --sidebar-primary-foreground: hsl(0, 0%, 100%);
+  --sidebar-accent: hsl(0, 0%, 11%);
+  --sidebar-accent-foreground: hsl(0, 0%, 100%);
+  --sidebar-border: hsl(0, 0%, 15%);
+  --sidebar-ring: hsl(348, 83%, 47%);
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-serif: Georgia, serif;
+  --font-mono: Menlo, monospace;
+  --radius: 0.5rem;
+  --primary-red: hsl(348, 83%, 47%);
+  --bright-red: hsl(0, 100%, 50%);
+  --dark-red: hsl(0, 100%, 27%);
+  --black: hsl(0, 0%, 0%);
+  --charcoal: hsl(0, 0%, 11%);
+  --white: hsl(0, 0%, 100%);
+  --off-white: hsl(0, 0%, 96%);
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+  --shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  --shadow-red: 0 10px 15px -3px rgba(220, 20, 60, 0.3), 0 4px 6px -4px rgba(220, 20, 60, 0.2);
+  --tracking-normal: 0em;
+  --spacing: 0.25rem;
+}
+
+.dark {
+  /* ATV Rentals Dark Mode - Premium Red/Black Theme */
+  --background: hsl(0, 0%, 0%);
+  --foreground: hsl(0, 0%, 100%);
+  --card: hsl(0, 0%, 11%);
+  --card-foreground: hsl(0, 0%, 100%);
+  --popover: hsl(0, 0%, 5%);
+  --popover-foreground: hsl(0, 0%, 100%);
+  --primary: hsl(348, 83%, 47%);
+  --primary-foreground: hsl(0, 0%, 100%);
+  --secondary: hsl(0, 0%, 15%);
+  --secondary-foreground: hsl(0, 0%, 100%);
+  --muted: hsl(0, 0%, 15%);
+  --muted-foreground: hsl(0, 0%, 65%);
+  --accent: hsl(0, 100%, 50%);
+  --accent-foreground: hsl(0, 0%, 100%);
+  --destructive: hsl(0, 84%, 60%);
+  --destructive-foreground: hsl(0, 0%, 100%);
+  --border: hsl(0, 0%, 20%);
+  --input: hsl(0, 0%, 15%);
+  --ring: hsl(348, 83%, 47%);
+  --chart-1: hsl(348, 83%, 47%);
+  --chart-2: hsl(0, 100%, 50%);
+  --chart-3: hsl(0, 0%, 40%);
+  --chart-4: hsl(0, 0%, 27%);
+  --chart-5: hsl(348, 83%, 37%);
+  --sidebar: hsl(0, 0%, 5%);
+  --sidebar-foreground: hsl(0, 0%, 100%);
+  --sidebar-primary: hsl(348, 83%, 47%);
+  --sidebar-primary-foreground: hsl(0, 0%, 100%);
+  --sidebar-accent: hsl(0, 0%, 15%);
+  --sidebar-accent-foreground: hsl(0, 0%, 100%);
+  --sidebar-border: hsl(0, 0%, 20%);
+  --sidebar-ring: hsl(348, 83%, 47%);
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+  --shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.4), 0 1px 2px -1px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.5), 0 2px 4px -2px rgba(0, 0, 0, 0.5);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.6), 0 4px 6px -4px rgba(0, 0, 0, 0.6);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.7), 0 8px 10px -6px rgba(0, 0, 0, 0.7);
+  --shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.8);
+  --shadow-red: 0 10px 15px -3px rgba(220, 20, 60, 0.4), 0 4px 6px -4px rgba(220, 20, 60, 0.3);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+  }
+}
+
+@layer components {
+  /* Premium Red Gradient Button */
+  .btn-red-gradient {
+    background: linear-gradient(135deg, var(--bright-red) 0%, var(--dark-red) 100%);
+    color: var(--white);
+    font-weight: 600;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .btn-red-gradient:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-red);
+  }
+
+  .btn-red-gradient:active {
+    transform: translateY(0);
+  }
+
+  /* Card Elevation Styles */
+  .card-elevated {
+    box-shadow: var(--shadow-md);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .card-elevated:hover {
+    box-shadow: var(--shadow-lg);
+    transform: translateY(-2px);
+  }
+
+  /* Gradient Background */
+  .bg-red-gradient {
+    background: linear-gradient(135deg, var(--black) 0%, var(--charcoal) 50%, var(--black) 100%);
+  }
+
+  .bg-red-accent-gradient {
+    background: linear-gradient(135deg, var(--primary-red) 0%, var(--dark-red) 100%);
+  }
+
+  /* Loading Spinner */
+  @keyframes spin-red {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  .spinner-red {
+    border: 3px solid rgba(220, 20, 60, 0.1);
+    border-top-color: var(--primary-red);
+    border-radius: 50%;
+    animation: spin-red 0.8s linear infinite;
+  }
+
+  /* Skeleton Loader */
+  @keyframes shimmer-red {
+    0% {
+      background-position: -1000px 0;
+    }
+    100% {
+      background-position: 1000px 0;
+    }
+  }
+
+  .skeleton-red {
+    background: linear-gradient(
+      90deg,
+      hsl(0, 0%, 15%) 0%,
+      hsl(0, 0%, 20%) 50%,
+      hsl(0, 0%, 15%) 100%
+    );
+    background-size: 1000px 100%;
+    animation: shimmer-red 2s infinite linear;
+  }
+
+  /* Page Transitions */
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .page-fade-in {
+    animation: fade-in 0.4s ease-out;
+  }
+}
+
+/* SMS Page Scoped Styles - Modern Professional Design */
+.sms-page {
+  /* Desert-inspired professional palette */
+  --sms-gradient-start: hsl(222, 47%, 11%);
+  --sms-gradient-end: hsl(215, 28%, 17%);
+  --sms-accent: hsl(43, 96%, 56%);
+  --sms-accent-muted: hsl(43, 96%, 56%, 0.1);
+  --sms-sent-bg: hsl(222, 47%, 11%, 0.8);
+  --sms-sent-border: hsl(189, 94%, 43%);
+  --sms-received-bg: hsl(215, 28%, 17%, 0.6);
+  --sms-glass-bg: hsl(0, 0%, 100%, 0.05);
+  --sms-glass-border: hsl(0, 0%, 100%, 0.1);
+  --sms-shadow-elevation: 0 12px 32px -16px rgba(15, 23, 42, 0.45);
+  --sms-text-primary: hsl(0, 0%, 98%);
+  --sms-text-secondary: hsl(215, 16%, 65%);
+  --sms-text-muted: hsl(215, 16%, 47%);
+}
+
+.sms-page .sms-gradient-header {
+  background: linear-gradient(135deg, var(--sms-gradient-start) 0%, var(--sms-gradient-end) 100%);
+}
+
+.sms-page .sms-card-elevated {
+  border-radius: 1rem;
+  border: 1px solid hsl(215, 28%, 17%, 0.2);
+  box-shadow: var(--sms-shadow-elevation);
+  transition: transform 150ms ease-out, box-shadow 150ms ease-out;
+}
+
+.sms-page .sms-card-elevated:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 40px -20px rgba(15, 23, 42, 0.55);
+}
+
+.sms-page .sms-card-elevated:active {
+  transform: translateY(0);
+}
+
+.sms-page .sms-glass-panel {
+  background: var(--sms-glass-bg);
+  border: 1px solid var(--sms-glass-border);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.sms-page .sms-message-sent {
+  background: var(--sms-sent-bg);
+  border-left: 3px solid var(--sms-sent-border);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.sms-page .sms-message-received {
+  background: var(--sms-received-bg);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.sms-page .sms-badge-unread {
+  background: var(--sms-accent);
+  color: hsl(222, 47%, 11%);
+  font-weight: 600;
+  font-size: 0.75rem;
+  padding: 0.125rem 0.5rem;
+  border-radius: 0.75rem;
+}
+
+.sms-page .sms-accent-bar {
+  width: 4px;
+  height: 100%;
+  background: var(--sms-accent);
+  border-radius: 0 0.25rem 0.25rem 0;
+}
+
+.sms-page .sms-button-gradient {
+  background: linear-gradient(135deg, hsl(189, 94%, 43%) 0%, hsl(217, 91%, 60%) 100%);
+  font-weight: 600;
+  transition: transform 150ms ease-out, box-shadow 150ms ease-out;
+}
+
+.sms-page .sms-button-gradient:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 20px -8px rgba(6, 182, 212, 0.4);
+}
+
+.sms-page .sms-button-gradient:active {
+  transform: scale(0.98);
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -1000px 0;
+  }
+  100% {
+    background-position: 1000px 0;
+  }
+}
+
+.sms-page .sms-skeleton {
+  background: linear-gradient(90deg, hsl(215, 28%, 17%, 0.3) 0%, hsl(215, 28%, 17%, 0.5) 50%, hsl(215, 28%, 17%, 0.3) 100%);
+  background-size: 1000px 100%;
+  animation: shimmer 2s infinite linear;
+}
+
+/* Custom Professional Scrollbar for Modal */
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(220, 20, 60, 0.5) rgba(0, 0, 0, 0.3);
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(28, 28, 28, 0.4));
+  border-radius: 10px;
+  margin: 8px 0;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, rgba(220, 20, 60, 0.7), rgba(220, 20, 60, 0.9));
+  border-radius: 10px;
+  border: 2px solid rgba(28, 28, 28, 0.5);
+  transition: all 0.3s ease;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to bottom, rgba(220, 20, 60, 0.9), #DC143C);
+  border: 2px solid rgba(220, 20, 60, 0.3);
+  box-shadow: 0 0 10px rgba(220, 20, 60, 0.5);
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:active {
+  background: #DC143C;
+}
+
+/* Modal fade-in animation */
+@keyframes modal-fade-in {
+  from {
+    opacity: 0;
+    transform: scale(0.95) translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.modal-content-animated {
+  animation: modal-fade-in 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
